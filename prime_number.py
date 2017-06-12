@@ -2,7 +2,7 @@ import time
 
 
 def generate_prime_numbers(n):
-    """Function generates prime numbers from 0 to n Asymptotically"""
+    "This is a Function that generates prime numbers from 0 to n Asymptotically"
     if isinstance(n, int) and n > 1:
         not_prime = []
         prime = []
@@ -18,8 +18,7 @@ def main():
     # Testing Function generate_prime_numbers(n)
     print(generate_prime_numbers(25))
 
-    # Asymptotic Tests -- Please find output in file on my Github repo
-    
+      
     for primenumsize in range(1, 25, 5):
         start = time.time()
         generate_prime_numbers(primenumsize)
