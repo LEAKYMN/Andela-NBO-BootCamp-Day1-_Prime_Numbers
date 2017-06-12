@@ -7,15 +7,15 @@ class TestGeneratePrimeNumbers(unittest.TestCase):
 
     def test_output_is_list(self):
         """output should be a List"""
-        self.assertEqual(True, isinstance(generate_prime_numbers(10), list), msg='Should return a list')
+        self.assertEqual(True, isinstance(generate_prime_numbers(9), list), msg='Should return a list')
 
     def test_is_prime_number(self):
         """output should be a prime number"""
-        self.assertEqual([2,3,5,7], generate_prime_numbers(10), msg='Should return prime numbers')
+        self.assertEqual([2,3,5,7], generate_prime_numbers(9), msg='Should return prime numbers')
 
     def test_returns_None_if_arg_is_negative(self):
         """There are no prime numbers for negative inputs"""
-        self.assertEqual(None, generate_prime_numbers(-10), msg='Should return None for negative argument')
+        self.assertEqual(None, generate_prime_numbers(-9), msg='Should return None for negative argument')
 
     def test_returns_None_if_arg_is_zero(self):
         """There are no prime numbers for arg 0"""
