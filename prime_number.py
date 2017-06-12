@@ -19,7 +19,7 @@ def main():
     print(generate_prime_numbers(25))
 
       
-    for primenumsize in range(1, 25, 5):
+    for primenumsize in range(1, 1000, 100):
         start = time.time()
         generate_prime_numbers(primenumsize)
         end = time.time()
